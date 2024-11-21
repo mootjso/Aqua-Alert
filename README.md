@@ -85,5 +85,47 @@ Navigate to the settings menu or change the `maxHeight` property in **MainPage.x
 - Use the admin interface to verify sensor connectivity and adjust thresholds.
 
 ---
+# Aqua Alert - Arduino Code
+
+## Description
+This is the Arduino-based firmware for the **Aqua Alert** project.  
+It collects real-time sensor data (e.g., soil moisture, temperature) and transmits it to the **Aqua Alert** mobile app.  
+The firmware is designed to work seamlessly with the [Aqua Alert mobile app](https://github.com/mootjso/Aqua-Alert).
+
+---
+
+## Features
+- Real-time data collection from sensors (e.g., soil moisture, temperature).
+- Transmits data over Wi-Fi to the Aqua Alert app.
+- Compatible with the Arduino Uno WiFi Rev2 or similar boards.
+
+---
+
+## Hardware Requirements
+- **Arduino Board**: Arduino Uno WiFi Rev2 (or equivalent).
+- **Sensors**:
+  - Soil moisture sensor.
+  - Optional: Temperature sensor (e.g., DS18B20).
+- **Other Components**:
+  - Breadboard.
+  - Jumper wires.
+
+---
+
+## Directory Structure
+1. **AquaAlert.ino**:  
+   Main Arduino sketch file for running the Aqua Alert firmware.
+
+---
+
+## Configuration
+Before uploading the code to your Arduino, ensure the following settings are correct in the **AquaAlert.ino** file:
+
+### Wi-Fi Configuration
+Update the Wi-Fi credentials in the code:
+```c++
+#define WIFI_SSID "YourNetworkName"
+#define WIFI_PASSWORD "YourNetworkPassword"
+
 
 **Aqua Alert simplifies plant care by keeping you informed in real-time about the health of your greenery! 🌱**
