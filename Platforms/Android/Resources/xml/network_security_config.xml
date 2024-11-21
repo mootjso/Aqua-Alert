@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--In de beveiliging instellingen sta ik onveilige (http ipv https) verbindingen toe-->
+<!--Hier geef ik de ip adres van de arduino op als als domein en op subdomeinen kijkt hij automatisch naar de zelfde regels (voor nu niet nodig maar handig voor als we door gaan)-->
+<network-security-config>
+	<domain-config cleartextTrafficPermitted="true">
+		<domain includeSubdomains="true">192.168.137.63</domain>
+	</domain-config>
+</network-security-config>

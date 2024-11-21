@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yourcompany.aquaalert">
+
+	<!-- Hier laat ik de gebruiker toegang maken aan de internet status en het internet zelf -->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+
+	<!-- Hier laat ik de app een backup maken indien de gebruiker het uninstalled en opnieuw installed om zijn / haar settings te behouden.-->
+	<!-- Ook maak een aparte network security config om er voor te zorgen dat de app niet op standaard https gebruikt maar ook http -->
+	<!-- Hiernaast zorg dit er voor dat de icoontje in de app launcher, meldingen en recent geopende app geopened wordt -->
+	<application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:roundIcon="@mipmap/appicon_round"
+        android:networkSecurityConfig="@xml/network_security_config">
+	</application>
+</manifest>
