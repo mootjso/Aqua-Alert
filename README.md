@@ -124,9 +124,8 @@ Before uploading the code to your Arduino, ensure the following settings are cor
 ### Wi-Fi Configuration
 Update the Wi-Fi credentials in the code:
 
-**Aqua Alert simplifies plant care by keeping you informed in real-time about the health of your greenery! 🌱**
-
 ```c++
 #define WIFI_SSID "YourNetworkName"
 #define WIFI_PASSWORD "YourNetworkPassword"
 
+**Aqua Alert simplifies plant care by keeping you informed in real-time about the health of your greenery! 🌱**
